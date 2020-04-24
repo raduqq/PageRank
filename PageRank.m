@@ -7,7 +7,7 @@ function [R1 R2] = PageRank(filename, d, eps)
   val1 = str2double(buffer);
   buffer = fgetl(in_fid);
   val2 = str2double(buffer);
-  
+
   fclose(in_fid);
   
   # Building L vector
@@ -44,7 +44,7 @@ function [R1 R2] = PageRank(filename, d, eps)
   PR_1 = sortrows(PR_1, -2);
   
   for i = 1:N
-    fprintf(out_fid, "%d %f %d\n", int32(PR_1(i, 1)), PR_1(i, 2), Apartenenta(PR_1(i, 2), val1, val2));  
+    fprintf(out_fid, "%d %d %f\n", i, int32(PR_1(i, 1)), Apartenenta(PR_1(i, 2), val1, val2));  
   endfor  
   
   fclose(out_fid);
