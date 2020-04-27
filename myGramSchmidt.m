@@ -1,3 +1,6 @@
+# Modified Gram-Schmidt, as presented in laboratory #3:
+# https://acs.curs.pub.ro/2019/pluginfile.php/61581/mod_resource/content/3/Lab_3_MN_2017.pdf
+
 function [Q R] = myGramSchmidt(A)
   # Initializing variables
   [n m] = size(A);

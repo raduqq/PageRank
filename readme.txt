@@ -28,7 +28,9 @@ Structura proiectului
 
 > Citirea listei de "vecini" - metoda readMatrix()
   + Citirea se realizeaza citind din fisier linie cu linie
-> Aflarea vectorului de link-uri (L)
+> Aflarea vectorului de link-uri (L):
+  + Folosit functia sum() pentru a afla cate elemente sunt egale cu 1 pe linia
+i a matricei de adiacenta A 
 > Calcularea PageRank-ului se realizeaza prin formulele la care se face
 referire in enuntul temei
   + Iteratiile se opresc pana cand diferenta dintre doi vectori de Pagerank
@@ -47,13 +49,9 @@ matrice A intr-una ortogonala Q si una superior-triunghiulara R, astfel:
 * Cerinta 3 - PageRank
 > Pentru a sorta vectorul PR_1 si a retine indicii initiali, am concatenat
 vectorului PR_1 acea coloana de indici.
-  + Ulterior, am sortat noul PR_1 dupa coloana ce continea PageRank-urile
+  + Ulterior, am sortat noul PR_1 dupa coloana ce continea PageRank-urile,
+  folosing functia sortrows()
   + Apartenenta - implementata conform "functiei membru" prezentata in enunt
-
-===============================================================================
-Limitari
-
-*
 ===============================================================================
 Feedback
 

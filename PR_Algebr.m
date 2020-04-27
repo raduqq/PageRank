@@ -4,5 +4,5 @@ function PR = PR_Algebr(N, M, d)
   one_vector = ones(N, 1);
   identity_matrix = eye(N);
   
-  PR = myInv(identity_matrix - d * M) * ((1 - d) / N) * one_vector;
+  PR = PR_Inv(identity_matrix - d * M) * ((1 - d) / N) * one_vector;
 endfunction
